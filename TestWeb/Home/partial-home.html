@@ -1,0 +1,14 @@
+
+<div  ng-repeat="panel in panels">
+    <div class="col-lg-10 col-lg-offset-1">
+        <div class="panel panel-default">
+            <div class="panel-heading" ng-bind="panel.title"></div>
+            <div class="panel-body" style="height:200px;">
+                <p ng-bind="panel.message"></p>
+                <p>
+    <input type="button" ng-click="myClick()" value="My Button"/>
+</p>
+            </div>
+        </div>
+    </div>
+</div>

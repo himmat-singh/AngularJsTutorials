@@ -1,0 +1,10 @@
+<div class="panel panel-default">
+        <div class="panel-heading">
+            <p><strong>{{student.FirstName}}  {{student.LastName}}</strong></p>
+        Enrolled in following Courses:</div>
+        <div class="panel-body">
+            <ul ng-repeat="course in student.EnrolledInCourses">
+                <li>{{course.CourseName}} [{{course.CourseDurationInDays}} days]</li>
+            </ul>
+        </div>        
+    </div>

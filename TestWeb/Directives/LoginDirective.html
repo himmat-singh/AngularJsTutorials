@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-md-offset-4 col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">Login to your account</div>
+            <div class="panel-body">
+                <ng-form name="myForm">
+                <p><input type="text" required class="form-control" name="username" placeholder="username" ng-model="username" />
+                    <span style="color:red" ng-show="myForm.username.$dirty && myForm.username.$invalid">
+                        <span ng-show="myForm.username.$error.required">Username is required.</span>
+                    </span>
+                </p>
+                <p><input type="password" required class="form-control" name="password" placeholder="password" ng-model="password" /></p>
+                <p><button ng-disabled="myForm.$invalid" type="button" class="form-control btn btn-default" name="login" value="Login" ng-click="login()">Login</button></p>
+            </ng-form>
+                    </div>
+        </div>
+    </div>    
+</div>

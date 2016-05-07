@@ -1,0 +1,14 @@
+<div class="col-lg-3 col-lg-offset-1 panel panel-default">
+<div class="panel-heading" >Test Services</div>
+    <div class="panel-body">
+    <input class="form-control" type="text" placeholder="Enter x" ng-model="x"/>
+    </div>
+    <div>
+    <input class="form-control" type="text" placeholder="Enter y" ng-model="y"/>
+    </div>
+    <div>
+    <button class="form-control btn btn-primary" type="button" ng-click="result = Numbers.Sum(x,y)">Check Result using Factory</button>
+        <button class="form-control btn btn-primary" type="button" ng-click="result = NumberService.Add(x,y)">Check Result using Service</button>
+    </div>
+    <p>Result : {{result}}</p>
+</div>

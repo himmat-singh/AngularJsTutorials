@@ -1,0 +1,17 @@
+body{
+    
+}
+
+
+input.ng-invalid {
+    background-color: pink;
+}
+input.ng-valid {
+    background-color: lightgreen;
+}
+
+.vertical-center{
+    top:25% !important;
+}
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Required css-->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+
+    <!--Custom css-->
+    <link href="app.css" rel="stylesheet" />
+
+    <!--Required scripts-->
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-ui-router.min.js"></script>
+
+    
+</head>
+<body ng-controller="MainController">
+    <div class="container-fluid">
+        <div ui-view></div>
+    </div>    
+    
+    
+    <!--Custom scripts-->
+    <script src="main-controller.js"></script>
+    <script src="Login/login-controller.js"></script>
+    <script src="About/about-controller.js"></script>
+    <script src="Home/home-controller.js"></script>
+    <script src="Directives/directives.js"></script>
+    <script src="Services/Factories.js"></script>
+    <script src="Services/Services.js"></script>
+</body>
+</html>
